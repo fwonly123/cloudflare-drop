@@ -3,28 +3,34 @@
   "name": "cloudflare-drop",
   "main": "src/index.ts",
   "compatibility_date": "2026-10-19",
-  "assets": { "directory": "./dist" },
+  "assets": { "directory": "./dist", "binding": "ASSETS" },
   "d1_databases": [
     {
-      "binding": "airdrop",
+      "binding": "DB",
       "database_name": "airdrop",
       "database_id": "6f80abcd-6638-4e41-b6b9-fa09751da242",
       "migrations_dir": "data/migrations"
     }
+  ],
+  "kv_namespaces": [
+    { "binding": "file_drops", "id": "9ab1f2c386f34536934cc77496896e29" }
   ],
   "env": {
     "production": {
       "name": "cloudflare-drop",
       "main": "src/index.ts",
       "compatibility_date": "2026-10-19",
-      "assets": { "directory": "./dist" },
+      "assets": { "directory": "./dist", "binding": "ASSETS" },
       "d1_databases": [
         {
-          "binding": "airdrop",
+          "binding": "DB",
           "database_name": "airdrop",
           "database_id": "6f80abcd-6638-4e41-b6b9-fa09751da242",
           "migrations_dir": "data/migrations"
         }
+      ],
+      "kv_namespaces": [
+        { "binding": "file_drops", "id": "9ab1f2c386f34536934cc77496896e29" }
       ]
     }
   }
